@@ -7,7 +7,7 @@ get_word - функция, которая случайно выбирает од
 
 
 def get_word():
-    with open(".venv/dict.txt", "r", encoding="utf-8") as file:
+    with open("dict.txt", "r", encoding="utf-8") as file:
         return list(random.choice(file.readlines())[:-1])
 
 
